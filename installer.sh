@@ -39,4 +39,7 @@ git clone git@github.com:fweep/vim-tabber.git
 
 
 echo trying to copy vimrc file
+
+cd -
+
 cp .vimrc ~/
