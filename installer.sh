@@ -6,6 +6,7 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vi
 
 echo pwd
 echo Installing Pluggins
+echo ''
 
 cd ~/.vim/bundle
 git clone git@github.com:w0rp/ale.git
