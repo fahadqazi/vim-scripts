@@ -38,7 +38,7 @@ git clone git@github.com:tpope/vim-sensible.git
 git clone git@github.com:tpope/vim-surround.git
 git clone git@github.com:fweep/vim-tabber.git 
 
-
+echo ''
 echo trying to copy vimrc file
 
 cd -
