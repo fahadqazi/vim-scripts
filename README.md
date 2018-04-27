@@ -1,6 +1,6 @@
 # Install Script for Javascript Vim development Environment
 
-Tested on Linux Mint and Ubuntu
+* Tested on Linux Mint and Ubuntu. 
 
 ### Installation
 1. ```git clone git@github.com:fahadqazi/vim-scripts.git```
@@ -19,10 +19,11 @@ That is all you should need to do. This script will:
     * delete the zip file
 
 ### To use on OS X 
-You will need homebrew for this. Install it [here][https://brew.sh/]
+You will need homebrew for this. Install it [here](https://brew.sh/)
 
 1. Use homebrew to install
     * wget ```brew install wget```
-    * unzip ```brew isntall unzip```
+    * unzip ```brew install unzip```
 
 2. Comment out line 65 -> ```get_utils```
+3. Follow the installation steps above
