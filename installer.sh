@@ -9,35 +9,35 @@ echo Installing Pluggins
 echo ''
 
 cd ~/.vim/bundle
-git clone git@github.com:w0rp/ale.git
-git clone git@github.com:romainl/Apprentice.git
-git clone git@github.com:jiangmiao/auto-pairs.git
-git clone git@github.com:mattn/emmet-vim.git
-git clone git@github.com:morhetz/gruvbox.git
-git clone git@github.com:scrooloose/nerdcommenter.git
-git clone git@github.com:scrooloose/nerdtree.git
-git clone git@github.com:vim-scripts/SlateDark.git
-git clone git@github.com:leafgarland/typescript-vim.git
-git clone git@github.com:vim-airline/vim-airline.git
-git clone git@github.com:Townk/vim-autoclose.git
-git clone git@github.com:MattesGroeger/vim-bookmarks.git
-git clone git@github.com:jeetsukumaran/vim-buffergator.git
-git clone git@github.com:tomasiser/vim-code-dark.git
-git clone git@github.com:tpope/vim-commentary.git
-git clone git@github.com:easymotion/vim-easymotion.git
-git clone git@github.com:tpope/vim-fugitive.git
-git clone git@github.com:airblade/vim-gitgutter.git
-git clone git@github.com:pangloss/vim-javascript.git
-git clone git@github.com:mxw/vim-jsx.git
-git clone git@github.com:plasticboy/vim-markdown.git
-git clone git@github.com:xolox/vim-misc.git
-git clone git@github.com:xolox/vim-notes.git
-git clone git@github.com:rakr/vim-one.git
-git clone git@github.com:prettier/vim-prettier.git
-git clone git@github.com:tpope/vim-sensible.git
-git clone git@github.com:tpope/vim-surround.git
-git clone git@github.com:fweep/vim-tabber.git 
-
+arr = (
+wget https://github.com/w0rp/ale/archive/master.zip
+wget https://github.com/romainl/Apprentice/archive/master.zip
+wget https://github.com/jiangmiao/auto-pairs/archive/master.zip
+wget https://github.com/mattn/emmet-vim/archive/master.zip
+wget https://github.com/morhetz/gruvbox/archive/master.zip
+wget https://github.com/scrooloose/nerdcommenter/archive/master.zip
+wget https://github.com/scrooloose/nerdtree/archive/master.zip
+wget https://github.com/vim-scripts/SlateDark/archive/master.zip
+wget https://github.com/leafgarland/typescript-vim/archive/master.zip
+wget https://github.com/vim-airline/vim-airline/archive/master.zip
+wget https://github.com/Townk/vim-autoclose/archive/master.zip
+wget https://github.com/MattesGroeger/vim-bookmarks/archive/master.zip
+wget https://github.com/jeetsukumaran/vim-buffergator/archive/master.zip
+wget https://github.com/tomasiser/vim-code-dark/archive/master.zip
+wget https://github.com/tpope/vim-commentary/archive/master.zip
+wget https://github.com/easymotion/vim-easymotion/archive/master.zip
+wget https://github.com/tpope/vim-fugitive/archive/master.zip
+wget https://github.com/airblade/vim-gitgutter/archive/master.zip
+wget https://github.com/pangloss/vim-javascript/archive/master.zip
+wget https://github.com/mxw/vim-jsx/archive/master.zip
+wget https://github.com/plasticboy/vim-markdown/archive/master.zip
+wget https://github.com/xolox/vim-misc/archive/master.zip
+wget https://github.com/xolox/vim-notes/archive/master.zip
+wget https://github.com/rakr/vim-one/archive/master.zip
+wget https://github.com/prettier/vim-prettier/archive/master.zip
+wget https://github.com/tpope/vim-sensible/archive/master.zip
+wget https://github.com/tpope/vim-surround/archive/master.zip
+wget https://github.com/fweep/vim-tabber/archive/master.zip)
 echo ''
 echo trying to copy vimrc file
 
