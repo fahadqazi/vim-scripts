@@ -1,10 +1,8 @@
 #!/bin/bash
 
-
-sudo apt-get install wget
-sudo apt-get install uzip
-
-cp .vimrc ~/
+echo "*************************************************"
+echo "*                 VIM SETUP                     *"
+echo "*************************************************"
 
 declare -a arr=(
 'wget https://github.com/w0rp/ale/archive/master.zip'
@@ -36,24 +34,35 @@ declare -a arr=(
 'wget https://github.com/tpope/vim-surround/archive/master.zip'
 'wget https://github.com/fweep/vim-tabber/archive/master.zip')
 
-function install_pathogen(){
-    mkdir -p ~/.vim/autoload ~/.vim/bundle
-    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+function get_utils(){
+    sudo apt-get install wget
+    sudo apt-get install uzip
 }
 
-#install_pathogen
+function install_pathogen(){
+    mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+}
 
+function create_vimrc(){
+    cp .vimrc ~/
+}
 
-for i in "${arr[@]}"
-do
-    $($i)
-    echo "Downloading $i"
-    echo "***********************************************************************"
-    echo "Unzipping"
-    echo "***********************************************************************"
-    unzip master.zip -d ~/.vim/bundle/
-    echo "Deleting"
-    echo "***********************************************************************"
-    rm -rf master.zip
-done
+function download_install_plugins(){
+    for i in "${arr[@]}"
+    do
+        $($i)
+        echo "Downloading $i"
+        echo "***********************************************************************"
+        echo "Unzipping"
+        echo "***********************************************************************"
+        unzip master.zip -d ~/.vim/bundle/
+        echo "Deleting"
+        echo "***********************************************************************"
+        rm -rf master.zip
+    done
+}
 
+get_utils
+install_pathogen
+create_vimrc
+download_install_plugins
