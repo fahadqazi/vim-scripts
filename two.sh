@@ -1,6 +1,11 @@
 #!/bin/bash
 
 
+sudo apt-get install wget
+sudo apt-get install uzip
+
+cp .vimrc ~/
+
 declare -a arr=(
 'wget https://github.com/w0rp/ale/archive/master.zip'
 'wget https://github.com/romainl/Apprentice/archive/master.zip'
@@ -31,18 +36,24 @@ declare -a arr=(
 'wget https://github.com/tpope/vim-surround/archive/master.zip'
 'wget https://github.com/fweep/vim-tabber/archive/master.zip')
 
+function install_pathogen(){
+    mkdir -p ~/.vim/autoload ~/.vim/bundle
+    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+}
 
-counter=0
+#install_pathogen
 
 
 for i in "${arr[@]}"
 do
     $($i)
-    echo "the counter is: $counter"
+    echo "Downloading $i"
+    echo "***********************************************************************"
+    echo "Unzipping"
+    echo "***********************************************************************"
+    unzip master.zip -d ~/.vim/bundle/
+    echo "Deleting"
+    echo "***********************************************************************"
+    rm -rf master.zip
 done
 
-
-for i in {1..27}
-do 
-    upzip master.zip.$i
-done
