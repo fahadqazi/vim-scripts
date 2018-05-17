@@ -36,7 +36,7 @@ declare -a arr=(
 
 function get_utils(){
     sudo apt-get install wget
-    sudo apt-get install uzip
+    sudo apt-get install unzip
 }
 
 function install_pathogen(){
